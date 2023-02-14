@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 45vh;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 16px;
+    font-family: "Red hat display";
+    display: grid;
+    place-content: center;
+}
+#bg{
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+
+}
+#card{
+    width: 400px;
+    height: 585px;
+    background-color: white;
+    margin: 12vh;
+    z-index: 1;
+    border-radius: 20px;
+}
+img{
+    width: 400px;
+    height: 170px;
+    border-radius: 20px 20px 0 0;
+}
+.description{
+    text-align: center;
+    padding: 25px;
+    padding-bottom: 20px;
+    color:hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+h2{
+    padding: 20px;
+    padding-top: 10px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+.music{
+    width: 40px;
+    height: 40px;
+}
+.plan{
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-color:hsl(225, 100%, 98%);
+    margin: 35px;
+    margin-top: 0px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.plan .bold{
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+.plan p{
+    padding-left: 20px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+.change{
+    margin-left: 85px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.change a{
+    color: hsl(245, 75%, 52%);
+}
+.change a:hover{
+    color: rgba(118, 108, 241);
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 0;
+    padding: 0;
+    width: 325px;
+    height: 2.75rem;
+    font-weight: 700;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    font-family: "Red hat display";
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0px 18px 15px 1px rgba(220, 216, 248,1);
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(118, 108, 241);
+}
+.cancel_order{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 900;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+.cancel_order:hover{
+    color: hsl(223, 47%, 23%);
+}
+@media (max-width:500px) {
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 50%;}
+    #card{
+        width: 325px;
+    }
+    .change{
+        margin-left: 15px;
+    }
+    button{
+        width: 290px;
+    }
+    img{
+        width: 325px;
+    }
+}
